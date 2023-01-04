@@ -1,0 +1,18 @@
+.load {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    background-color: var(--darker-color);
+    color: var(--txt-color);
+    opacity: 0.3;
+    transition: color var(--transition-const), opacity var(--transition-const);
+    &:hover,
+    &:focus {
+        opacity: 1;
+        color: var(--context-color);
+    }
+}

@@ -1,1 +1,60 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background-color: var(--darker-color);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    @include min360 {
+        width: 360px;
+    }
+    @include min480 {
+        width: 480px;
+    }
+    @include min768 {
+        width: 768px;
+    }
+    @include min1200 {
+        width: 1200px;
+    }
+    @include min1600 {
+        width: 1600px;
+    }
+}
+
+.content {
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+.content-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--txt-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0.3;
+    width: 240px;
+    @include min360 {
+        width: 300;
+    }
+    @include min480 {
+        width: 400px;
+        font-size: 28px;
+    }
+    @include min768 {
+        width: 600px;
+        font-size: 36px;
+    }
+    @include min1200 {
+        width: 700px;
+        font-size: 48px;
+    }
+}
