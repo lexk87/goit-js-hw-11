@@ -1,4 +1,4 @@
-.load {
+.load-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,5 +14,10 @@
     &:focus {
         opacity: 1;
         color: var(--context-color);
+    }
+    &[disabled] {
+        color: var(--txt-color);
+        opacity: 0.3;
+        cursor: wait;
     }
 }
