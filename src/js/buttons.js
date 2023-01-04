@@ -1,5 +1,4 @@
 export const loadBtn = {
-    
     btn: document.querySelector(".load-btn"),
     btnImg: document.querySelector(".load-btn__img"),
 
@@ -21,11 +20,9 @@ export const loadBtn = {
         this.btn.disabled = true;
         this.btnImg.classList.add("fa-spin")
     },
-    
 };
 
 export const clearBtn = {
-
     btn: document.querySelector(".search-form__clear-btn"),
 
     show() {
@@ -35,5 +32,4 @@ export const clearBtn = {
     hide() {
         this.btn.classList.add("hidden");
     },
-
 };
