@@ -4,21 +4,22 @@ export const loadBtn = {
 
     show() {
         this.btn.classList.remove("hidden");
+        this.btnImg.classList.remove("fa-spin");
     },
 
     hide() {
         this.btn.classList.add("hidden");
-        this.btnImg.classList.remove("fa-spin")
+        this.btnImg.classList.remove("fa-spin");
     },
 
     enable() {
         this.btn.disabled = false;
-        this.btnImg.classList.remove("fa-spin")
+        this.btnImg.classList.remove("fa-spin");
     },
 
     disable() {
         this.btn.disabled = true;
-        this.btnImg.classList.add("fa-spin")
+        this.btnImg.classList.add("fa-spin");
     },
 };
 
